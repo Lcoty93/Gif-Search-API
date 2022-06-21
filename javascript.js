@@ -9,7 +9,7 @@ const textBox = document.querySelector('#textBox');
 
 
     function getNewImg(searchResult) {
-      fetch(`https://api.giphy.com/v1/gifs/translate?api_key=DT0lFptRkRsItTwpuxKVdOgOLO0XQoRx&s=${searchResult}`, {mode: 'cors'})
+      fetch(`https://api.giphy.com/v1/gifs/translate?api_key=MY_PERSONAL_KEY=${searchResult}`, {mode: 'cors'})
       .then(function(response) {
         return response.json();
     })
